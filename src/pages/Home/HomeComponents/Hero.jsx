@@ -71,7 +71,7 @@ const Hero = () => {
         </div>
       </div>
       {/* glance section */}
-      <div className="relative h-[620px] bg-[#0B293A] mb-10">
+      <div className="relative h-[620px] bg-[#0B293A] pb-10">
         <div
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/3 h-[200px] bg-no-repeat bg-right bg-cover z-0"
           style={{ backgroundImage: `url(${grid})` }}

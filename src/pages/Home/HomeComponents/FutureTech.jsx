@@ -1,6 +1,6 @@
 const FutureTech = () => {
   return (
-    <div className="bg-[EFF9FF]">
+    <div className="bg-[#EFF9FF]">
       <div className="p-10 max-w-7xl mx-auto">
         <div>
           <h1 className="text-4xl text-gray-600 font-semibold">
