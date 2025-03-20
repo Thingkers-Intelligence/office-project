@@ -5,7 +5,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .custom-outline {
-  -webkit-text-stroke: 2px #00ff00;
+  -webkit-text-stroke: 2px #05eb00;
   background-color: transparent;
+  color: transparent;
+}
+
+.custom-outline-2 {
+  -webkit-text-stroke: 2px #0099ec;
   color: transparent;
 }

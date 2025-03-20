@@ -19,19 +19,19 @@ const Hero = () => {
         />
         <img
           src={circle2}
-          className="absolute bottom-10 w-[205px] right-0 w-24 opacity-50"
+          className="absolute bottom-10 w-[205px] right-0 opacity-50"
           alt="Circle Background 2"
         />
 
         {/* Main Content */}
         <div className="max-w-4xl mx-auto text-center z-50">
-          <h1 className="text-[80px] md:text-5xl font-extrabold leading-tight">
+          <h1 className="text-[80px] md:text-5xl font-extrabold leading-tight text-gray-400">
             Building the{" "}
             <span className=" font-bold bg-transparent uppercase text-green-500 custom-outline">
-              NextWave
+              Next Wave
             </span>
             <br />
-            of Tech Innovators
+            <span className="text-gray-400">of Tech Innovators</span>
           </h1>
           <p className="text-lg mt-4 text-[#959595]">
             Bridging the gap between education and industry by training students
@@ -71,7 +71,7 @@ const Hero = () => {
         </div>
       </div>
       {/* glance section */}
-      <div className="relative h-[624px] bg-[#0B293A] mb-10">
+      <div className="relative h-[620px] bg-[#0B293A] mb-10">
         <div
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/3 h-[200px] bg-no-repeat bg-right bg-cover z-0"
           style={{ backgroundImage: `url(${grid})` }}
@@ -79,7 +79,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto  z-50 flex flex-col justify-center h-full items-center">
           <h1 className="text-[80px]  md:text-5xl text-[#B1B1B1] font-extrabold leading-tight">
             {" "}
-            <span className=" font-bold bg-transparent uppercase text-green-500 custom-outline">
+            <span className="font-bold bg-transparent uppercase text-green-500 custom-outline">
               Thingkers
             </span>{" "}
             : At a Glance
