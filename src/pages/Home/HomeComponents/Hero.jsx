@@ -27,19 +27,19 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center z-50">
           <h1 className="text-[80px] md:text-5xl font-extrabold leading-tight text-gray-400">
             Building the{" "}
-            <span className=" font-bold bg-transparent uppercase text-green-500 custom-outline">
+            <span className=" font-bold bg-transparent uppercase text-green-500 custom-outline ">
               Next Wave
             </span>
             <br />
             <span className="text-gray-400">of Tech Innovators</span>
           </h1>
-          <p className="text-lg mt-4 text-[#959595]">
+          <p className="text-lg mt-8 w-[663px] mx-auto text-[#959595]">
             Bridging the gap between education and industry by training students
             and youth in cutting-edge technologies.
           </p>
 
           {/* Buttons */}
-          <div className="mt-6 flex justify-center gap-4">
+          <div className="mt-10 flex justify-center gap-6">
             <button className="bg-[#05EB00] text-black hover:bg-green-600 px-6 py-3 rounded-md  ">
               Get Started
             </button>
@@ -53,7 +53,7 @@ const Hero = () => {
         <div className="mt-16 flex justify-center relative">
           <img
             src={heroImage}
-            className="w-full max-w-3xl rounded-xl"
+            className="w-full max-w-3xl rounded-[32px]"
             alt="Students Learning"
           />
           <div className="absolute inset-0 flex justify-center items-center">
@@ -79,12 +79,12 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto  z-50 flex flex-col justify-center h-full items-center">
           <h1 className="text-[80px]  md:text-5xl text-[#B1B1B1] font-extrabold leading-tight">
             {" "}
-            <span className="font-bold bg-transparent uppercase text-green-500 custom-outline">
+            <span className="font-bold bg-transparent uppercase text-green-500 custom-outline leading-[100%]">
               Thingkers
             </span>{" "}
-            : At a Glance
+            : <span className="tracking-[-2%]"> At a Glance</span>
           </h1>
-          <p className="text-[#959595] mb-4 mt-10 text-center">
+          <p className="text-[#959595] mb-4 mt-10 text-center ">
             We are a dedicated IT-based Organization committed to{" "}
             <span className="font-bold">empowering students and youth</span>{" "}
             with the skills and knowledge needed to excel in the world of
