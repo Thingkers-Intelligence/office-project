@@ -28,9 +28,15 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </div>
 
-        <ul className="flex text-white space-x-4">
+        <ul className="flex text-white items-center space-x-4">
+          <Link to={"programs"}>Programs</Link>
           <Link to={"about"}>About Us</Link>
           <Link to={"contact"}>Contact Us</Link>
+          <Link to={"community"}>
+            <button className="border border-[#05EB00] text-[#05EB00] px-5 py-2 rounded-md  ">
+              Join Our Community
+            </button>
+          </Link>
         </ul>
       </div>
     </div>

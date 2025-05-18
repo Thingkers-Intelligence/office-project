@@ -34,7 +34,7 @@ const FutureTech = () => {
               <h3 className="text-[24px] font-normal text-[#0B293A] mb-3">
                 Coding&nbsp;Bootcamps
               </h3>
-              <p className="text-base text-[#3C5A6A]">
+              <p className="text-base text-[#3C5A6A] py-1">
                 Intensive training in Python, JavaScript, and full-stack
                 development.
               </p>
@@ -54,7 +54,7 @@ const FutureTech = () => {
               <h3 className="text-[24px] font-normal text-[#0B293A] mb-3">
                 AI & Automation
               </h3>
-              <p className="text-base text-[#3C5A6A]">
+              <p className="text-sm text-[#0B293A]">
                 Build intelligent solutions with machine learning and automation{" "}
                 tools.
               </p>
@@ -74,7 +74,7 @@ const FutureTech = () => {
               <h3 className="text-[24px] font-normal text-[#0B293A] mb-3">
                 App & Web Development
               </h3>
-              <p className="text-base text-[#3C5A6A]">
+              <p className="text-sm text-[#0B293A]">
                 Master in-demand tech skills with hands-on training, expert
                 mentorship, and real-world projects—your gateway to a thriving
                 tech career!
@@ -95,7 +95,7 @@ const FutureTech = () => {
               <h3 className="text-[24px] font-normal text-[#0B293A] tracking-[4%] mb-3">
                 IOT & Robotics&nbsp;Automation
               </h3>
-              <p className="text-base text-[#3C5A6A]">
+              <p className="text-sm text-[#0B293A]">
                 We specialize in IoT & Robotics Automation, delivering smart and
                 efficient automation solutions.
               </p>
@@ -115,7 +115,7 @@ const FutureTech = () => {
               <h3 className="text-[24px] font-normal text-[#0B293A] mb-3">
                 UI/UX Design
               </h3>
-              <p className="text-base text-[#3C5A6A]">
+              <p className="text-sm text-[#0B293A]">
                 Master user experience and design systems for digital platforms.
               </p>
             </div>
@@ -134,7 +134,7 @@ const FutureTech = () => {
               <h3 className="text-[24px] font-normal text-[#0B293A] mb-3">
                 Career & Internships
               </h3>
-              <p className="text-base text-[#3C5A6A]">
+              <p className="text-sm text-[#0B293A]">
                 Hands-on projects and mentorship to guide you towards job
                 placement.
               </p>
