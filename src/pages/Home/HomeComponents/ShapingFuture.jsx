@@ -1,6 +1,18 @@
 export default function ThinkgersTimeline() {
   return (
-    <div className="min-h-screen bg-[#0B293A] text-white py-12 px-6 md:px-16">
+    <div className="bg-[#0B293A] text-white py-12 px-6 md:px-16 relative">
+      <div className="w-full">
+        <img
+          className="absolute right-0 top-1/4"
+          src="/public/Ellipse-2.png"
+          alt=""
+        />
+        <img
+          className="absolute left-16 bottom-1/6"
+          src="/public/Ellipse-1.png"
+          alt=""
+        />
+      </div>
       <div className="text-center w-[962px] mx-auto mb-16">
         <h1 className="text-3xl text-[#B1B1B1] tracking-[-2%] md:text-5xl font-bold">
           Shaping the Future with:{" "}
