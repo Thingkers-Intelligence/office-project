@@ -5,6 +5,7 @@ import ThinkgersTimeline from "./HomeComponents/ShapingFuture";
 import Projects from "./HomeComponents/Projects";
 import ThingkersBuzz from "./HomeComponents/Testimonials";
 import JoinPage from "./HomeComponents/RegisterSection";
+import Footer from "./HomeComponents/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Projects />
       <ThingkersBuzz />
       <JoinPage />
+      <Footer />
     </div>
   );
 };

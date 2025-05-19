@@ -1,40 +1,47 @@
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { ArrowRightIcon } from "lucide-react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white px-6 py-10 space-y-6">
+    <footer className="bg-[#FFF6D5] text-white px-10 py-10 space-y-6 mt-16">
       {/* Logo Center */}
       <div className="flex justify-center">
-        <img src="/logo.svg" alt="Logo" className="h-10" />
+        <img src="/officeLogo.png" alt="Logo" className="h-10" />
       </div>
 
       {/* Nav and Input */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div>
+          <h3 className="text-[#2A4E62] font-[500] leading-8 text-[20px]">
+            +8801644387462
+          </h3>
+          <p className="text-[#2A4E62] font-[400] leading-8 text-[16px]">
+            thingkersintilighence@gmail.com
+          </p>
+        </div>
         {/* Navigation Items */}
-        <nav className="flex flex-wrap justify-center md:justify-start gap-6 text-sm">
-          <a href="#" className="hover:text-gray-300">
-            Home
-          </a>
-          <a href="#" className="hover:text-gray-300">
-            About
-          </a>
-          <a href="#" className="hover:text-gray-300">
-            Services
-          </a>
-          <a href="#" className="hover:text-gray-300">
-            Contact
-          </a>
+        <nav className="flex flex-wrap justify-center md:justify-start gap-6 text-[16px]">
+          <Link href="#" className="text-[#0B293A]">
+            Programmes
+          </Link>
+          <Link href="#" className="text-[#0B293A]">
+            About Us
+          </Link>
+          <Link href="#" className="text-[#0B293A]">
+            Contact Us
+          </Link>
         </nav>
 
         {/* Input and Button */}
-        <div className="flex items-center border border-gray-700 rounded overflow-hidden">
+        <div className="flex items-center border border-[#00007C33] rounded overflow-hidden">
           <input
             type="email"
-            placeholder="Your email"
-            className="bg-gray-800 text-white px-4 py-2 outline-none w-64"
+            placeholder="Your Email here...."
+            className="bg-[#FFFFFF] text-[#0A142F] px-4 py-2 outline-none w-64"
           />
-          <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2">
-            Subscribe
+          <button className="bg-[#0099EC] px-4 py-2">
+            <ArrowRightIcon className="text-white" />
           </button>
         </div>
       </div>
@@ -43,20 +50,36 @@ export default function Footer() {
       <hr className="border-gray-700" />
 
       {/* Bottom Line */}
-      <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <div className="flex flex-col md:flex-row justify-between items-center text-sm text-[#0A142F]">
         <p>
-          &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+          &copy; {new Date().getFullYear()} Thingkersintelligence. All rights
+          reserved
         </p>
         <div className="flex gap-4 mt-4 md:mt-0">
-          <a href="#" className="hover:text-white">
+          <Link
+            href="#"
+            className="text-[#0A142F] border border-gray-400 p-2 rounded-full"
+          >
             <FaFacebookF />
-          </a>
-          <a href="#" className="hover:text-white">
+          </Link>
+          <Link
+            href="#"
+            className="text-[#0A142F]  p-2 rounded-full border border-gray-400"
+          >
             <FaTwitter />
-          </a>
-          <a href="#" className="hover:text-white">
+          </Link>
+          <Link
+            href="#"
+            className="text-[#0A142F]  p-2 rounded-full border border-gray-400"
+          >
             <FaInstagram />
-          </a>
+          </Link>
+          <Link
+            href="#"
+            className="text-[#0A142F]  p-2 rounded-full border border-gray-400"
+          >
+            <FaYoutube />
+          </Link>
         </div>
       </div>
     </footer>

@@ -57,16 +57,18 @@ const Hero = () => {
             alt="Students Learning"
           />
           <div className="absolute inset-0 flex justify-center items-center">
-            <button className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="red"
-                className="w-8 h-8"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
+            <div className="size-16 bg-white/30 backdrop-blur-sm rounded-full  shadow-lg flex items-center justify-center">
+              <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="red"
+                  className="w-8 h-8"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
