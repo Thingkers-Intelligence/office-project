@@ -27,7 +27,7 @@ export default function ThingkersBuzz() {
         </div>
 
         {/* Marquee container */}
-        <div className="relative w-full overflow-hidden ">
+        <div className="relative w-full overflow-hidden marquee-container">
           <div className="marquee-track space-x-4 mt-4">
             {testimonials.map((testimonial, index) => (
               <Card

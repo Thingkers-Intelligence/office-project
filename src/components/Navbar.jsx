@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
 
         <ul className="flex text-white items-center space-x-4">
-          <Link to={"programs"}>Programs</Link>
+          <Link to={"programs"}>Programmes</Link>
           <Link to={"about"}>About Us</Link>
           <Link to={"contact"}>Contact Us</Link>
           <Link to={"community"}>

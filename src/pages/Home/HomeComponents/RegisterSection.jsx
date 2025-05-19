@@ -1,6 +1,6 @@
 const JoinPage = () => {
   return (
-    <div className=" bg-gray-100 py-18">
+    <div className=" bg-[#EFF9FF] py-18">
       <div className="max-w-7xl mx-auto  flex flex-col md:flex-row items-center justify-between">
         {/* Left Side - Image */}
         <div className="md:w-1/2 w-full flex justify-center gap-6">

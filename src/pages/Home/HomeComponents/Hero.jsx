@@ -6,7 +6,7 @@ import heroImage from "../../../assets/images/heroImage.png";
 const Hero = () => {
   return (
     <>
-      <div className=" relative bg-[#0B293A] text-white py-16 px-6 md:px-16">
+      <div className=" relative bg-[#0B293A] text-white py-20 px-6 md:px-16">
         <div
           className="absolute top-0 left-0 w-[36%] h-full bg-no-repeat bg-right bg-cover z-0"
           style={{ backgroundImage: `url(${grid})` }}

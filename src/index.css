@@ -29,3 +29,7 @@ body {
     transform: translateX(-50%);
   }
 }
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}

@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, Mail, Phone } from "lucide-react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -12,13 +12,19 @@ export default function Footer() {
 
       {/* Nav and Input */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-        <div>
-          <h3 className="text-[#2A4E62] font-[500] leading-8 text-[20px]">
-            +8801644387462
-          </h3>
-          <p className="text-[#2A4E62] font-[400] leading-8 text-[16px]">
-            thingkersintilighence@gmail.com
-          </p>
+        <div className="space-y-2">
+          <div className="flex items-center space-x-2">
+            <Phone className="w-5 h-5 text-[#2A4E62]" />
+            <h3 className="text-[#2A4E62] font-[500] leading-8 text-[20px]">
+              +8801644387462
+            </h3>
+          </div>
+          <div className="flex items-center space-x-2">
+            <Mail className="w-5 h-5 text-[#2A4E62]" />
+            <p className="text-[#2A4E62] font-[400] leading-8 text-[16px]">
+              thingkersintilighence@gmail.com
+            </p>
+          </div>
         </div>
         {/* Navigation Items */}
         <nav className="flex flex-wrap justify-center md:justify-start gap-6 text-[16px]">
