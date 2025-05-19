@@ -3,6 +3,8 @@ import Hero from "./HomeComponents/Hero";
 import FutureTech from "./HomeComponents/FutureTech";
 import ThinkgersTimeline from "./HomeComponents/ShapingFuture";
 import Projects from "./HomeComponents/Projects";
+import ThingkersBuzz from "./HomeComponents/Testimonials";
+import JoinPage from "./HomeComponents/RegisterSection";
 
 const Home = () => {
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       <FutureTech />
       <ThinkgersTimeline />
       <Projects />
+      <ThingkersBuzz />
+      <JoinPage />
     </div>
   );
 };

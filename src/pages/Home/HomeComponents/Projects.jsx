@@ -49,8 +49,6 @@ const projects = [
 ];
 
 export default function Projects() {
-  const container = useRef(null);
-
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -63,8 +61,8 @@ export default function Projects() {
   });
 
   return (
-    <section className="py-12 px-4 md:px-12 bg-[#EAF6FF] min-h-screen">
-      <div ref={container} className="max-w-7xl mx-auto">
+    <section className="py-12 px-4 md:px-12 bg-[#EFF9FF] min-h-screen">
+      <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

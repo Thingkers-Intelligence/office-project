@@ -14,3 +14,18 @@ body {
   -webkit-text-stroke: 2px #0099ec;
   color: transparent;
 }
+
+.marquee-track {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

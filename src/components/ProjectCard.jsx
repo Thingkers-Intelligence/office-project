@@ -1,15 +1,21 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Card, CardContent } from "./ui/Card";
 import { useRef } from "react";
 
 const ProjectCard = ({ project, index }) => {
   const container = useRef(null);
 
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "start start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], [index * 150, 0]);
+
   return (
     <div ref={container} className="sticky top-44">
       <motion.div
         key={index}
-        style={{ top: ` ${index * 250}px)` }}
+        style={{ y }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
