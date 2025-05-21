@@ -42,11 +42,11 @@ export default function Footer() {
           <input
             type="email"
             placeholder="Your Email here...."
-            className="bg-white text-[#0A142F] px-4 py-2 outline-none flex-grow min-w-0"
+            className="bg-white text-[#0A142F] px-4 py-2 outline-none w-3/4"
           />
           <button
             type="submit"
-            className="bg-[#0099EC] px-4 py-2 hover:bg-[#007ACD] transition-colors duration-200"
+            className="bg-[#0099EC] px-4 py-2 hover:bg-[#007ACD] transition-colors duration-200 flex-grow"
             aria-label="Subscribe"
           >
             <ArrowRightIcon className="text-white" />
