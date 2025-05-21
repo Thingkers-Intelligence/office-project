@@ -21,9 +21,9 @@ const ProjectCard = ({ project, index }) => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: index * 0.05 }}
       >
-        <Card className={`rounded-2xl shadow-lg ${project.bgColor} p-6`}>
+        <Card className={`rounded-2xl shadow-lg ${project.bgColor} p-1 md:p-6`}>
           <CardContent className="h-full">
-            <div className="flex flex-col md:flex-row h-full gap-6">
+            <div className="flex flex-col-reverse md:flex-row h-full gap-2 md:gap-6">
               {/* Text Section */}
               <div className="flex-1 flex flex-col justify-center ">
                 <div className="p-4">
@@ -47,20 +47,20 @@ const ProjectCard = ({ project, index }) => {
                   </div>
                 </div>
 
-                <div className="flex justify-between text-sm font-medium text-gray-800 mt-auto px-4">
+                <div className="flex justify-between text-sm font-medium mt-auto px-4 text-center md:text-left">
                   <div>
-                    <p className="font-semibold text-2xl mb-1 text-[#174159]">
+                    <p className="font-semibold text-xl md:text-2xl mb-1 text-[#174159]">
                       {project.duration}
                     </p>
-                    <p className="text-[16px] text-[#5E5E5E]">
+                    <p className="md:text-[16px] text-[#5E5E5E]">
                       Project Durations
                     </p>
                   </div>
-                  <div className="lg:mr-12">
-                    <p className="font-semibold text-2xl mb-1 text-[#174159]">
+                  <div className="lg:mr-12 ">
+                    <p className="font-semibold text-xl md:text-2xl mb-1 text-[#174159]">
                       {project.acquisition}
                     </p>
-                    <p className="text-[16px] text-[#5E5E5E]">
+                    <p className="md:text-[16px] text-[#5E5E5E]">
                       Customer Acquisition
                     </p>
                   </div>
