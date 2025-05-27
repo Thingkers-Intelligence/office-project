@@ -65,7 +65,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section className="py-8 px-4 sm:py-12 sm:px-8 md:px-12 bg-[#EFF9FF] min-h-screen">
+    <section className="py-4 md:py-18 px-4 sm:py-12 sm:px-8 md:px-12 bg-[#EFF9FF] min-h-screen">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

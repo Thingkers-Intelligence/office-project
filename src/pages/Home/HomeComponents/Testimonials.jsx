@@ -10,7 +10,7 @@ const testimonials = Array(10).fill({
 
 export default function ThingkersBuzz() {
   return (
-    <div className="bg-[#0B293A] text-white p-4 sm:p-8 overflow-hidden relative">
+    <div className="bg-[#0B293A] text-white p-4 sm:px-8 overflow-hidden relative md:py-16">
       <div className="absolute top-1/5 left-0">
         <img src="/Ellipse-1.png" alt="" />
       </div>

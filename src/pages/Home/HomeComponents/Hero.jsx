@@ -7,7 +7,7 @@ import heroImage from "../../../assets/images/heroImage.png";
 const Hero = () => {
   return (
     <>
-      <div className="relative bg-[#0B293A] text-white py-16 px-4 md:px-12 lg:px-16 overflow-hidden">
+      <div className="relative bg-[#0B293A] text-white py-6 md:py-16 px-4 md:px-12 lg:px-16 overflow-hidden">
         {/* Background grid */}
         <div
           className="absolute top-0 left-0 w-[50%] h-full bg-no-repeat bg-right bg-cover z-0 opacity-30"
@@ -28,12 +28,11 @@ const Hero = () => {
 
         {/* Main Content */}
         <div className="relative max-w-5xl mx-auto text-center z-10 px-2">
-          <h1 className="text-4xl sm:text-5xl lg:text-[80px] font-extrabold leading-tight text-gray-400 ">
+          <h1 className="text-4xl sm:text-5xl lg:text-[80px] font-bold leading-tight text-gray-400 ">
             Building the{" "}
             <span className="uppercase custom-outline font-bold">
               Next Wave
-            </span>
-            <br />
+            </span>{" "}
             <span className="text-gray-400">of Tech Innovators</span>
           </h1>
 
@@ -86,12 +85,12 @@ const Hero = () => {
         ></div>
 
         <div className="max-w-5xl mx-auto text-center z-10 relative">
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-[#B1B1B1]">
+          <h1 className="text-4xl sm:text-5xl font-[600] leading-tight text-[#B1B1B1] tracking-[-2%]">
             <span className="uppercase custom-outline">Thingkers</span>:{" "}
             <span className="tracking-tight">At a Glance</span>
           </h1>
 
-          <p className="text-[#959595] mt-6 sm:mt-10 text-sm sm:text-base px-2">
+          <p className="text-[#959595] mt-6 sm:mt-10 text-sm sm:text-base md:px-6 lg:px-24 ">
             We are a dedicated IT-based Organization committed to{" "}
             <span className="font-bold">empowering students and youth</span>{" "}
             with the skills and knowledge needed to excel in the world of
@@ -103,7 +102,7 @@ const Hero = () => {
               programming, web development, app development, AI, and automation.
             </span>
           </p>
-          <p className="text-[#959595] mt-4 text-sm sm:text-base px-2">
+          <p className="text-[#959595] mt-4 text-sm sm:text-base md:px-6 lg:px-24">
             We bridge the gap between{" "}
             <span className="font-bold">education and the job market</span> by
             offering hands-on learning experiences, mentorship from industry

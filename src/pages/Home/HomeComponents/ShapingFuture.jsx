@@ -1,6 +1,6 @@
 export default function ThinkgersTimeline() {
   return (
-    <div className="bg-[#0B293A] text-white py-18 px-4 sm:px-6 md:px-12 lg:px-16 relative">
+    <div className="bg-[#0B293A] text-white py-6 md:py-28 px-4 sm:px-6 md:px-12 lg:px-16 relative">
       {/* Background Images */}
       <div className="w-full">
         <img
