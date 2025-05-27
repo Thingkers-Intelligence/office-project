@@ -33,3 +33,9 @@ body {
 .marquee-container:hover .marquee-track {
   animation-play-state: paused;
 }
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+}

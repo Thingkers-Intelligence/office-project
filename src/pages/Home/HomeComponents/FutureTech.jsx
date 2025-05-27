@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+// Animation Variants
 const containerVariant = {
   hidden: {},
   visible: {
@@ -34,72 +35,7 @@ const textVariant = {
   },
 };
 
-const FutureTech = () => {
-  return (
-    <div className="bg-[#EFF9FF]">
-      <div className="container mx-auto px-2 sm:px-6 lg:px-8">
-        <motion.div
-          className="pt-10 md:pt-16 pb-12 text-center md:text-left"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={textVariant}
-        >
-          <h1 className="text-3xl sm:text-4xl lg:text-[44px] text-[#2A4E62] font-semibold leading-snug">
-            From Beginners to Experts – We Shape
-          </h1>
-          <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-bold uppercase mt-1 text-[#0099EC] custom-outline-2 py-1 tracking-wide leading-snug">
-            Future Tech Leaders
-          </h1>
-          <p className="text-base sm:text-lg text-[#5E5E5E] mt-4 sm:mt-6 max-w-3xl mx-auto md:mx-0">
-            Gain in-demand tech skills through hands-on training, real-world
-            projects, and expert mentorship. Whether you're a beginner or an
-            aspiring professional, our structured programs will equip you with
-            the knowledge and experience to thrive in the digital world.
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 py-10"
-          variants={containerVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          {cardData.map((card, i) => (
-            <motion.div
-              key={i}
-              className={`lg:col-span-${card.colSpan} p-6 sm:p-8 rounded-xl shadow-md flex flex-col justify-between h-full`}
-              style={{
-                background:
-                  "linear-gradient(220.72deg, #D5FFD4 3.28%, rgba(171, 222, 251, 0.5) 48.18%, #ABDEFB 95.79%)",
-              }}
-              variants={cardVariant}
-            >
-              <img
-                src={card.img}
-                alt={`frame-${i + 1}`}
-                className="w-16 sm:w-20"
-              />
-              <div className="mt-4">
-                <h3 className="text-xl sm:text-2xl text-[#0B293A] mb-2">
-                  {card.title}
-                </h3>
-                <p className="text-sm sm:text-base text-[#0B293A]">
-                  {card.text}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </div>
-  );
-};
-
-export default FutureTech;
-
-// Card Data Array (Below the component)
+// Card Data Array
 const cardData = [
   {
     title: "Coding Bootcamps",
@@ -138,3 +74,78 @@ const cardData = [
     colSpan: 3,
   },
 ];
+
+// Component
+const FutureTech = () => {
+  return (
+    <div className="bg-[#EFF9FF]">
+      <div className="container mx-auto px-4 sm:px-6">
+        <motion.div
+          className="pt-10 md:pt-16 pb-12 text-center md:text-left"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={textVariant}
+        >
+          <h1 className="text-3xl sm:text-4xl lg:text-[44px] text-[#2A4E62] font-semibold leading-snug">
+            From Beginners to Experts – We Shape
+          </h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-bold uppercase mt-1 text-[#0099EC] custom-outline-2 py-1 tracking-wide leading-snug">
+            Future Tech Leaders
+          </h1>
+          <p className="text-base sm:text-lg text-[#5E5E5E] mt-4 sm:mt-6 max-w-3xl mx-auto md:mx-0">
+            Gain in-demand tech skills through hands-on training, real-world
+            projects, and expert mentorship. Whether you're a beginner or an
+            aspiring professional, our structured programs will equip you with
+            the knowledge and experience to thrive in the digital world.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 py-10"
+          variants={containerVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {cardData.map((card, i) => {
+            const colSpanClass =
+              card.colSpan === 3
+                ? "lg:col-span-3"
+                : card.colSpan === 4
+                ? "lg:col-span-4"
+                : "lg:col-span-5";
+
+            return (
+              <motion.div
+                key={i}
+                className={`p-4 md:py-8 rounded-3xl shadow-md flex flex-col justify-between h-full ${colSpanClass} gap-4`}
+                style={{
+                  background:
+                    "linear-gradient(220.72deg, #D5FFD4 3.28%, rgba(171, 222, 251, 0.5) 48.18%, #ABDEFB 95.79%)",
+                }}
+                variants={cardVariant}
+              >
+                <img
+                  src={card.img}
+                  alt={`frame-${i + 1}`}
+                  className="w-12 sm:w-14"
+                />
+                <div className="mt-4">
+                  <h3 className="text-xl md:text-2xl text-[#0B293A] mb-2 font-[400] tracking-[4%]">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-[#0B293A] lg:pr-16">
+                    {card.text}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default FutureTech;
