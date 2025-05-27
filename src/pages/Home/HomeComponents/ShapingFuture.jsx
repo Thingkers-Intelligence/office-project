@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
+
 export default function ThinkgersTimeline() {
   return (
-    <div className="bg-[#0B293A] text-white py-6 md:py-28 px-4 sm:px-6 md:px-12 lg:px-16 relative">
+    <div className="bg-[#0B293A] text-white py-6 md:py-28 px-4 sm:px-6 md:px-12 lg:px-16 relative overflow-hidden">
       {/* Background Images */}
       <div className="w-full">
         <img
@@ -36,15 +38,24 @@ export default function ThinkgersTimeline() {
           const isRight = index % 2 === 0;
 
           return (
-            <div
+            <motion.div
               key={index}
               className="relative w-full flex flex-col md:flex-row items-center justify-center gap-6 mb-12 z-10"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             >
               {/* Left Card */}
               {isRight ? (
                 <div className="hidden md:block md:w-[465px]"></div>
               ) : (
-                <div className="w-full md:w-[465px] h-auto md:h-[177px] bg-[#103950B2] px-6 py-4 rounded-xl shadow-inner text-sm md:text-base backdrop-blur-md text-center flex items-center justify-center">
+                <motion.div
+                  className="w-full md:w-[465px] h-auto md:h-[177px] bg-[#103950B2] px-6 py-4 rounded-xl shadow-inner text-sm md:text-base backdrop-blur-md text-center flex items-center justify-center"
+                  initial={{ x: -50, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                >
                   <div>
                     <h3 className="text-[#05E100] font-[500] text-xl sm:text-2xl mb-3">
                       {item.title}
@@ -53,15 +64,25 @@ export default function ThinkgersTimeline() {
                       {item.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               )}
 
               {/* Circle */}
-              <div className="w-4 h-4 sm:w-5 sm:h-5 bg-gradient-to-r from-[#174159] to-[#328CBF] rounded-full z-20"></div>
+              <motion.div
+                className="w-4 h-4 sm:w-5 sm:h-5 bg-gradient-to-r from-[#174159] to-[#328CBF] rounded-full z-20"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: 0.1, duration: 0.4 }}
+              ></motion.div>
 
               {/* Right Card */}
               {isRight ? (
-                <div className="w-full md:w-[465px] h-auto md:h-[177px] bg-[#103950B2] px-6 py-4 rounded-xl shadow-inner text-sm md:text-base backdrop-blur-md text-center flex items-center justify-center">
+                <motion.div
+                  className="w-full md:w-[465px] h-auto md:h-[177px] bg-[#103950B2] px-6 py-4 rounded-xl shadow-inner text-sm md:text-base backdrop-blur-md text-center flex items-center justify-center"
+                  initial={{ x: 50, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                >
                   <div>
                     <h3 className="text-[#05E100] font-[500] text-xl sm:text-2xl mb-3">
                       {item.title}
@@ -70,11 +91,11 @@ export default function ThinkgersTimeline() {
                       {item.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ) : (
                 <div className="hidden md:block md:w-[465px]"></div>
               )}
-            </div>
+            </motion.div>
           );
         })}
       </div>
